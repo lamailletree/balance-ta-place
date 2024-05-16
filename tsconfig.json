@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "https://lamailletree.github.io/glanage-partage\n",
+    "baseUrl": "http://lamailletree.github.io/glanage-partage",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
