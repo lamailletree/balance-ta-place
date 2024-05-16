@@ -6,6 +6,7 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    "noImplicitAny": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
@@ -18,10 +19,12 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
+    "suppressExcessPropertyErrors": true,
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "skipLibCheck": true,
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
