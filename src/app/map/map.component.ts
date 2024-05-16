@@ -31,7 +31,8 @@ const stylePoint = new Style({
 
 var f1 = new Feature({
                   name: 'Feuilles mortes avec humus',
-                  category: 'Amendement',
+                  category: 'Jardinage',
+                  subcategory: 'Amendement',
                   usage: 'Amendement pour compost, paillage',
                   author: 'Julien L',
                   geometry: new Point([ -2.009217,48.623529])
@@ -40,7 +41,8 @@ f1.setStyle(stylePoint);
 
 var f2 = new Feature({
                   name: 'Taupinières',
-                  category: 'Amendement',
+                  category: 'Jardinage',
+                  subcategory: 'Amendement',
                   usage: 'Amendement pour terreau, lasagne et autres',
                   author: 'Julien L',
                   geometry: new Point([ -2.011048496699721, 48.62070693190694])
@@ -49,7 +51,8 @@ f2.setStyle(stylePoint);
 
 var f3 = new Feature({
                   name: 'Crottin de cheval',
-                  category: 'Amendement',
+                  category: 'Jardinage',
+                  subcategory: 'Amendement',
                   usage: 'Amendement',
                   author: 'Julien L',
                   geometry: new Point([ -2.010333264741102, 48.62226618317582])
@@ -58,7 +61,8 @@ f3.setStyle(stylePoint);
 
 var f4 = new Feature({
                   name: 'Vers de sable',
-                  category: 'Appâts',
+                  category: 'Pêche',
+                  subcategory: 'Appâts',
                   usage: 'Appâts pour la pêche',
                   author: 'Julien L',
                   geometry: new Point([ -2.014358883009655, 48.62730113628342])
@@ -120,14 +124,22 @@ export class MapComponent implements OnInit {
     }
 
     this.map.on('singleclick', function (this:Map, event) {
+        if (this.forEachFeatureAtPixel(event.pixel, function (feature) {
+            return true;
+        }) === undefined) {
+            overlay.setPosition(undefined);
+            return;
+        }
+
         var feature = this.forEachFeatureAtPixel(event.pixel, function (feature) {
             var coordinate = event.coordinate;
             if (content !== null) {
-                content.innerHTML = '<b>'+feature.get('name')+'</b><br />'+feature.get('usage')+'<br />';
+                content.innerHTML = '<b>'+feature.get('name')+'</b><br /><b>Catégorie : </b>'+feature.get('category')
+                +'<br /><b>Sous-catégorie : </b>'+feature.get('subcategory')+'<br /><b>Utilisation : </b>'
+                +feature.get('usage')+'<br /><b>Auteur : </b>'+feature.get('author');
             }
             overlay.setPosition(coordinate);
         });
-
     });
   }
 }
