@@ -15,7 +15,7 @@ import Point from 'ol/geom/Point';
 import Feature from 'ol/Feature';
 import Overlay from 'ol/Overlay';
 import { Circle, Fill, Style } from 'ol/style';
-
+import datas from '../../assets/datas.json';
 
 useGeographic();
 const center = [-2.01667 , 48.650002];
@@ -29,49 +29,22 @@ const stylePoint = new Style({
                               })
                           })
 
-var f1 = new Feature({
-                  name: 'Feuilles mortes avec humus',
-                  category: 'Jardinage',
-                  subcategory: 'Amendement',
-                  usage: 'Amendement pour compost, paillage',
-                  author: 'Julien L',
-                  geometry: new Point([ -2.009217,48.623529])
-                });
-f1.setStyle(stylePoint);
-
-var f2 = new Feature({
-                  name: 'Taupinières',
-                  category: 'Jardinage',
-                  subcategory: 'Amendement',
-                  usage: 'Amendement pour terreau, lasagne et autres',
-                  author: 'Julien L',
-                  geometry: new Point([ -2.011048496699721, 48.62070693190694])
-                });
-f2.setStyle(stylePoint);
-
-var f3 = new Feature({
-                  name: 'Crottin de cheval',
-                  category: 'Jardinage',
-                  subcategory: 'Amendement',
-                  usage: 'Amendement',
-                  author: 'Julien L',
-                  geometry: new Point([ -2.010333264741102, 48.62226618317582])
-                });
-f3.setStyle(stylePoint);
-
-var f4 = new Feature({
-                  name: 'Vers de sable',
-                  category: 'Pêche',
-                  subcategory: 'Appâts',
-                  usage: 'Appâts pour la pêche',
-                  author: 'Julien L',
-                  geometry: new Point([ -2.014358883009655, 48.62730113628342])
-                });
-f4.setStyle(stylePoint);
+var features = datas.spots.map(function(spot) {
+    var feature = new Feature({
+        name: spot.name,
+        category: spot.category,
+        subcategory: spot.subcategory,
+        usage: spot.usage,
+        author: spot.author,
+        geometry: new Point(spot.coordinates)
+    });
+    feature.setStyle(stylePoint);
+    return feature;
+})
 
 const layer = new Vector({
      source: new VectorSource({
-         features: [f1,f2,f3,f4]
+         features: features
      })
  });
 

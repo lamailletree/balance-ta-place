@@ -1,0 +1,70 @@
+{
+  "spots": [
+    {
+      "name": "Feuilles mortes avec humus",
+      "category": "Jardinage",
+      "subcategory": "Amendement",
+      "usage": "Amendement pour compost, paillage",
+      "coordinates": [
+        -2.009217,
+        48.623529
+      ],
+      "author": "Julien L"
+    },
+    {
+      "name": "Taupinières",
+      "category": "Jardinage",
+      "subcategory": "Amendement",
+      "usage": "Amendement pour terreau, lasagne et autres",
+      "coordinates": [
+        -2.011048496699721,
+        48.62070693190694
+      ],
+      "author": "Julien L"
+    },
+    {
+      "name": "Crottin de cheval",
+      "category": "Jardinage",
+      "subcategory": "Amendement",
+      "usage": "Amendement",
+      "coordinates": [
+        -2.010333264741102,
+        48.62226618317582
+      ],
+      "author": "Julien L"
+    },
+    {
+      "name": "Vers de sable",
+      "category": "Pêche",
+      "subcategory": "Appâts",
+      "usage": "Appâts pour la pêche",
+      "coordinates": [
+        -2.014358883009655,
+        48.62730113628342
+      ],
+      "author": "Julien L"
+    },
+    {
+      "name": "Bambous fines branches",
+      "category": "Jaridnage",
+      "subcategory": "Construction",
+      "usage": "Construction de structures, tuteur, canisse, ombrage.",
+      "coordinates": [
+        -2.0083162487905004,
+        48.62606771917479
+      ],
+      "author": "Julien L"
+    },
+    {
+      "name": "Bambous grosses branches",
+      "category": "Jardinage",
+      "subcategory": "Construction",
+      "usage": "Construction de structures, tuteurage.",
+      "coordinates": [
+        -2.0097117253246677,
+        48.620938566120294
+      ],
+      "author": "Julien L"
+    }
+  ]
+}

@@ -3,6 +3,8 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "http://lamailletree.github.io/glanage-partage",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
