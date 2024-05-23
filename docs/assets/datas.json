@@ -9,7 +9,9 @@
         -2.009217,
         48.623529
       ],
-      "author": "Julien L"
+      "author": "Julien L",
+      "start_at": "10/01",
+      "end_at": "01/31"
     },
     {
       "name": "Taupinières",
@@ -56,13 +58,68 @@
       "author": "Julien L"
     },
     {
-      "name": "Bambous grosses branches",
+      "name": "Bambous fines branches",
       "category": "Jardinage",
       "subcategory": "Construction",
-      "usage": "Construction de structures, tuteurage.",
+      "usage": "Construction de structures, tuteur, canisse, ombrage.",
       "coordinates": [
         -2.0097117253246677,
         48.620938566120294
+      ],
+      "author": "Julien L"
+    },
+    {
+      "name": "Bambous fines branches",
+      "category": "Jardinage",
+      "subcategory": "Construction",
+      "usage": "Construction de structures, tuteur, canisse, ombrage.",
+      "coordinates": [
+        -2.0090445193338313,
+        48.62670924904008
+      ],
+      "author": "Julien L"
+    },
+    {
+      "name": "Noisetiers",
+      "category": "Loisirs",
+      "subcategory": "Construction",
+      "usage": "Tressage, vannerie, nichoir.",
+      "coordinates": [
+        -2.0110102375902605,
+        48.62472675890321
+      ],
+      "author": "Julien L"
+    },
+    {
+      "name": "Taupinières",
+      "category": "Jardinage",
+      "subcategory": "Amendement",
+      "usage": "Amendement pour terreau, lasagne et autres",
+      "coordinates": [
+        -2.010967888404742,
+        48.624375743076214
+      ],
+      "author": "Julien L"
+    },
+    {
+      "name": "Cèpes, Bolets",
+      "category": "Cueillette",
+      "subcategory": "Champignons",
+      "usage": "Alimentation",
+      "coordinates": [
+        -2.0108446200674046,
+        48.62360632799639
+      ],
+      "author": "Julien L"
+    },
+    {
+      "name": "Palettes bois",
+      "category": "Construction",
+      "subcategory": "Matériaux",
+      "usage": "Construction, bricolage",
+      "coordinates": [
+        -1.980282581042907,
+        48.60529270740628
       ],
       "author": "Julien L"
     }
