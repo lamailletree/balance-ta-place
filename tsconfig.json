@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "http://lamailletree.github.io/glanage-partage",
+    "baseUrl": "http://lamailletree.github.io/balance-ta-place",
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "./dist/out-tsc",
