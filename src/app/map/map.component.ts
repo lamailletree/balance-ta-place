@@ -20,11 +20,47 @@ import datas from '../../assets/datas.json';
 useGeographic();
 const center = [-2.01667 , 48.650002];
 
-const stylePoint = new Style({
+const basicStylePoint = new Style({
                               image: new Circle({
                                   radius: 8,
                                   fill: new Fill({
                                       color: '#7C1B15'
+                                  })
+                              })
+                          })
+
+const constructionStylePoint = new Style({
+                              image: new Circle({
+                                  radius: 8,
+                                  fill: new Fill({
+                                      color: '#FF0000'
+                                  })
+                              })
+                          })
+
+const pecheStylePoint = new Style({
+                              image: new Circle({
+                                  radius: 8,
+                                  fill: new Fill({
+                                      color: '#0000FF'
+                                  })
+                              })
+                          })
+
+const jardinStylePoint = new Style({
+                              image: new Circle({
+                                  radius: 8,
+                                  fill: new Fill({
+                                      color: '#00FF00'
+                                  })
+                              })
+                          })
+
+const cueilletteStylePoint = new Style({
+                              image: new Circle({
+                                  radius: 8,
+                                  fill: new Fill({
+                                      color: '#FF00FF'
                                   })
                               })
                           })
@@ -38,7 +74,10 @@ var features = datas.spots.map(function(spot) {
         author: spot.author,
         geometry: new Point(spot.coordinates)
     });
-    feature.setStyle(stylePoint);
+    feature.setStyle(spot.category === 'Construction' ? constructionStylePoint :
+                      spot.category === 'Pêche' ? pecheStylePoint :
+                      spot.category === 'Jardin' ? jardinStylePoint :
+                      spot.category === 'Cueillette' ? cueilletteStylePoint : basicStylePoint);
     return feature;
 })
 

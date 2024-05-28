@@ -122,6 +122,28 @@
         48.60529270740628
       ],
       "author": "Julien L"
+    },
+    {
+      "name": "Palettes bois",
+      "category": "Construction",
+      "subcategory": "Matériaux",
+      "usage": "Construction, bricolage",
+      "coordinates": [
+        -1.96849854246965,
+        48.65956838884645
+      ],
+      "author": "Julien L"
+    },
+    {
+      "name": "Chataignes",
+      "category": "Cueillette",
+      "subcategory": "Fruits",
+      "usage": "Alimentation",
+      "coordinates": [
+        -2.0143401190668753,
+        48.61940143199071
+      ],
+      "author": "Julien L"
     }
   ]
 }
